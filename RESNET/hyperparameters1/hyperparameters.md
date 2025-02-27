@@ -1,0 +1,3 @@
+BATCH_SIZE = 64  
+EPOCHS = 50  
+LR = 1e-2

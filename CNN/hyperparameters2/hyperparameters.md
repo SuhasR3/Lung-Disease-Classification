@@ -1,0 +1,4 @@
+BATCH_SIZE = 16  
+EPOCHS = 50  
+LR = 1e-4  
+DROPOUT = 0.25

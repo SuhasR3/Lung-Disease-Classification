@@ -1,0 +1,4 @@
+BATCH = 64  
+EPOCH = 50  
+LR = 1e-2  
+DROPOUT = 0.5
