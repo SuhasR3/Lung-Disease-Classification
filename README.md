@@ -42,7 +42,6 @@ The goal is to determine how different optimizers affect the performance of imag
 - Python 3.8+
 - PyTorch
 - Hugging Face Transformers (for Sequencer2d)
-- SOL supercomputer access (optional, for training)
 
 ### Setup
 1. Clone the repository:
