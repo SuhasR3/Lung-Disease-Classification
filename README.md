@@ -3,12 +3,9 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 
-This project, *Performative Analysis of Optimizers on Fine-Tuned Lung Disease Classification*, evaluates the impact of optimizers on fine-tuning machine learning models for classifying lung diseases using chest X-ray images. Conducted by Ray Hu, Jiandong Guan, Cong Wei, and Suhas Raghavendra, it tests three optimizers—SGD, AdamW, and Adadelta—across three models: ZF-Net (CNN), Sequencer2d (LSTM-based), and ResNet-50 (Residual Neural Network).
+This project, *Performative Analysis of Optimizers on Fine-Tuned Lung Disease Classification*, evaluates how different optimizers affect the performance of image classification models in detecting lung conditions such as bacterial pneumonia, COVID-19, tuberculosis, viral pneumonia, and normal lungs using chest X-ray images. 
 
-## Project Overview
-
-### Objective
-The goal is to determine how different optimizers affect the performance of image classification models in detecting lung conditions such as bacterial pneumonia, COVID-19, tuberculosis, viral pneumonia, and normal lungs.
+---
 
 ### Dataset
 - **Source**: Publicly available chest X-ray repositories
@@ -26,6 +23,9 @@ The goal is to determine how different optimizers affect the performance of imag
 - **AdamW**: Adaptive optimizer with weight decay, default betas (0.9, 0.999).
 - **Adadelta**: Adaptive learning rate optimizer with weight decay (1e-2).
 
+---
+## Results
+
 ### Key Findings
 - **AdamW**: Excels in baseline settings with smaller batch sizes and learning rates.
 - **SGD**: Performs best with larger batch sizes, showing strong generalization.
@@ -35,6 +35,10 @@ The goal is to determine how different optimizers affect the performance of imag
 - Training Loss
 - Validation Loss
 - Weighted F1 Score
+
+Loss curves and F1 scores are logged during training. Refer to `SML Project Final report/` for outputs.
+
+---
 
 ## Installation
 
@@ -65,27 +69,10 @@ python train.py --model zfnet --optimizer adamw --batch-size 32 --lr 1e-4 --epoc
 Options: --model [zfnet, sequencer2d, resnet50], --optimizer [sgd, adamw, adadelta]
 
 ### Hyperparameters
-See the paper for tested configurations:
 - Batch Size: 16, 32, 64
 - Learning Rate: 1e-2, 1e-4
 - Dropout (ZF-Net): 0.25, 0.5
 
-### Results
-Loss curves and F1 scores are logged during training. Refer to `SML Project Final report/` for saved outputs.
-
-## Project Structure
-```
-Lung-Disease-Classification/
-├── Dataset/              # Dataset
-├── CNN/
-├── LSTM/            
-├── RESNET/                        
-│   ├── zfnet.py
-│   ├── sequencer2d.py
-│   └── resnet50.py
-├── requirements.txt   # Dependencies
-└── README.md          # This file
-```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
