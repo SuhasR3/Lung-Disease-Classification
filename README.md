@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 
-This project, *Performative Analysis of Optimizers on Fine-Tuned Lung Disease Classification*, evaluates how different optimizers affect the performance of image classification models in detecting lung conditions such as bacterial pneumonia, COVID-19, tuberculosis, viral pneumonia, and normal lungs using chest X-ray images. 
+This project evaluates how different optimizers affect the performance of image classification models in detecting lung conditions such as bacterial pneumonia, COVID-19, tuberculosis, viral pneumonia, and normal lungs using chest X-ray images. 
 
 ---
 
